@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./src/styles/reset.css" />
+	<link rel="stylesheet" href="./src/styles/variables.css" />
+	<link rel="stylesheet" href="./src/styles/container.css" />
+	<link rel="stylesheet" href="./src/styles/section-header.css" />
+	<link rel="stylesheet" href="./src/styles/tabs.css" />
+	<link rel="stylesheet" href="./src/styles/awesome.css" />
+	<title>axit</title>
+</head>
+
+<body class="page__content">
+	<section class="tabs">
+		<div class="container">
+			<!-- сейчас не запаривайтесь про fieldset и legend, эти теги нужны
+			 для группировки элементов форм и здесь я 
+				их использовал для того что бы скрин ридер 
+				правильно прочел этот контрол с табами. 
+				Более подробно про формы и все что с ними 
+				связано мы разберем на занятии по формам -->
+			<fieldset class="tabs__dox">
+				 <legend class="tabs__legend">Tabs</legend>
+					<input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
+					<label class="tabs__tab-label" for="tab_1"> tab 1</label>
+					<input class="tabs__tab" id="tab_2" type="radio" name="tab" />
+					<label class="tabs__tab-label" for="tab_2">
+						tab 2</label>
+	    <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
+					<label class="tabs__tab-label" for="tab_3"> tab 3</label>
+			</fieldset>
+			<div class="tabs__content" >
+				<div class="tabs__content-text">
+					<h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
+					<p class="tabs__content-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+						justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et magnis dis parturient montes.
+						<br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						bibendum laoreet.
+					</p>
+					<button class="tabs__content-button" type="button">download</button>
+				</div>
+				<img class="tabs__content-image" src="./src/assets/images/statue-of-liberty.jpg"
+					alt="statue-of-liberty image" />
+			</div>
+	</section>
+	<section class="awesome">
+		<div class="container">
+			<!-- этот блок делаем через header тк семантически он сюда подходит,
+		 по факту он является  шапкой секции -->
+			<header class="section-header">
+				<h2 class="section-header__title">whY ThIS iS AWESOME</h2>
+				<div class="section-header__line"></div>
+				<p class="section-header__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</header>
+			<div class="awesome__content-box">
+				<div class="awesome__card">
+					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
+					<h3 class="awesome__card-title">Thoughtful Design</h3>
+					<p class="awesome__card-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+				<div class="awesome__card">
+					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
+					<h3 class="awesome__card-title">Thoughtful Design</h3>
+					<p class="awesome__card-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+				<div class="awesome__card">
+					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
+					<h3 class="awesome__card-title">Thoughtful Design</h3>
+					<p class="awesome__card-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

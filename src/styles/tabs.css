@@ -1,0 +1,111 @@
+.tabs {
+	padding: 5rem 0;
+}
+
+/* задаем родителю  font-size: 0; что бы убрать отступы у дочерних 
+inline-block элементов */
+/* так же задаем свойство  text-align: justify; которое 
+прижмет дочерние inline-block элементы к левому и правому краю. 
+Но, само по себе оно работать не будет и нам нужно прописать 
+код который ниже через псевдоэлемент ::after */
+
+.tabs__content {
+	font-size: 0;
+	border: 1px solid #c6cbcd;
+	text-align: justify;
+	padding-left: 5rem;
+}
+
+/* вот этот */
+.tabs__content::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.tabs__content-button {
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: var(--background-color-btn-normal);
+	padding: 1rem 6.5rem;
+	margin-top: 4rem;
+}
+
+.tabs__content-description {
+	color: rgb(0 0 0 /1);
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 4rem;
+}
+
+.tabs__content-image {
+	max-width: 100%;
+	height: auto;
+}
+
+/* для блока с текстом прописываем  display: inline-block;
+тк он блочный и надо сделать inline-block.
+Так же свойство  vertical-align: top поднимет этот блок вверх,
+нужно это для того что подравнять блок с текстом к картинке тк высота у них 
+разная и тот блок который ниже по умолчанию прижимается к низу */
+
+.tabs__content-text {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+.tabs__content-title {
+	font-size: 1.9rem;
+	margin-top: 4rem;
+}
+
+/* табы  */
+
+.tabs__dox {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* я убрал подпись и пользователь ее не увидит, но скрин 
+ридер прочтет */
+
+.tabs__legend {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+/* тут я скрыл сами радио кнопки */
+.tabs__tab {
+	position: absolute;
+	appearance: none;
+	pointer-events: none;
+}
+
+.tabs__tab-label {
+	display: inline-block;
+	cursor: pointer;
+	height: 3.5rem;
+	width: 9rem;
+	padding-top: 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* здесь мы через checked понимаем какая радио кнопка
+нажата и добавляем к ее лейблу стили для активного состояния */
+
+.tabs__tab:checked + .tabs__tab-label {
+	position: relative;
+	top: 2px;
+	z-index: 10;
+	background-color: #fff;
+	border: 1px solid #c6cbcd;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}

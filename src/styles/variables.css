@@ -1,0 +1,9 @@
+
+/* css переменные или кастомные свойства */
+
+:root{
+    /* buttons */
+    --background-color-btn-normal: #EC7979;
+    --background-color-btn-hover: #AB4949;
+    --background-color-btn-active: ##EC7979;
+   }
