@@ -1,0 +1,54 @@
+.pricing__content-box{
+display: flex;
+justify-content: space-around;
+}
+.pricing{
+    background-color: #F5F5F5;
+    height: 770px;
+}
+.basic{
+margin-top: 18px;
+}
+.optima{
+    margin-bottom: 18px;
+    box-shadow: 0 5px 10px grey, 0 5px 10px grey;
+}
+.pro{
+    margin-top: 18px;
+}
+.table-header{
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 317px;
+    height: 53.21px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+.cost{
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 317px;
+    height: 88.68px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+}
+.free-for-life{
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 317px;
+    height: 44.34px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF80;
+}
+.cell{
+    width: 317px;
+    height: 44.34px;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #86878B;
+}
