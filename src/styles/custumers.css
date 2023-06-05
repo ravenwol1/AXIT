@@ -1,0 +1,80 @@
+.custumers {
+  padding: 5rem 0;
+  font-family: "Raleway", sans-serif;
+}
+.custumers__content-box {
+  display: flex;
+  justify-content: space-around;
+}
+.custumers__saying-text {
+  font-size: 14px;
+  color: #86878b;
+  text-align: center;
+  padding: 45px;
+  width: 317px;
+  height: 180px;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  position: relative;
+}
+.custumers__saying-text::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  bottom: -40px;
+  border: 20px solid transparent;
+  border-top: 20px solid #e2e2e2;
+}
+
+.custumers__saying-people {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 57px;
+  gap: 22.5px;
+}
+.section-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  /* background-image: url(src\assets\images\background.svg); */
+  background-color: black;
+}
+.section-footer__title {
+  margin: 50px;
+  color: #ffffff;
+  font-size: 24px;
+}
+.section-footer__line {
+  display: inline-block;
+  height: 1px;
+  width: 170px;
+  background-color: #ffffff;
+  margin-top: 1.2rem;
+}
+.section-footer__description {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 1.2rem;
+}
+.custumers__button {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  padding: 1rem 6.5rem;
+  margin-top: 32px;
+  color: #ffffff;
+  background-color: rgba(28, 28, 28, 0);
+  border: 1px solid #ffffff;
+}
+.custumers__name {
+  height: 63px;
+  width: 200px;
+  position: relative;
+}
+.name {
+  font-size: 18px;
+  position: absolute;
+}
+.job {
+  position: absolute;
+  font-size: 14px;
+  bottom: 0px;
+}

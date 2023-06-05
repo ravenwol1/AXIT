@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="src/styles/pricing.css" />
+    <link rel="stylesheet" href="src/styles/custumers.css" />
+    <link rel="stylesheet" href="src/assets/images/background.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -25,12 +27,6 @@
   <body class="page__content">
     <section class="tabs">
       <div class="container">
-        <!-- сейчас не запаривайтесь про fieldset и legend, эти теги нужны
-			 для группировки элементов форм и здесь я 
-				их использовал для того что бы скрин ридер 
-				правильно прочел этот контрол с табами. 
-				Более подробно про формы и все что с ними 
-				связано мы разберем на занятии по формам -->
         <fieldset class="tabs__dox">
           <legend class="tabs__legend">Tabs</legend>
           <input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
@@ -66,8 +62,6 @@
     </section>
     <section class="awesome">
       <div class="container">
-        <!-- этот блок делаем через header тк семантически он сюда подходит,
-		 по факту он является  шапкой секции -->
         <header class="section-header">
           <h2 class="section-header__title">whY ThIS iS AWESOME</h2>
           <div class="section-header__line"></div>
@@ -156,7 +150,70 @@
             <li class="prising__list-cell">1 gb of space</li>
             <li class="prising__list-cell">1 gb of space</li>
           </ul>
-          
+        </div>
+      </div>
+    </section>
+    <section class="custumers">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title">what our customers are saying</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="custumers__content-box">
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man1.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Rhiel Madsen</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man2.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Jaydon Rosser</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man3.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Cooper Dorwart</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <h2 class="section-footer__title">STYLISH AXURE DESIGN</h2>
+          <div class="section-footer__line"></div>
+          <p class="section-footer__description">
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </p>
+          <button class="custumers__button" type="button">download</button>
         </div>
       </div>
     </section>
