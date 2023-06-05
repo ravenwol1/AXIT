@@ -1,0 +1,49 @@
+.pricing__content-box {
+  display: flex;
+  justify-content: space-around;
+  align-content: end;
+  height: 550px;
+}
+.pricing {
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+  height: 850px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.prising__list {
+  max-height: 453px;
+}
+.prising__list-title {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 24px;
+  background-color: #333333;
+  width: 317px;
+  height: 53.21px;
+  border: 1px solid #f5f5f5;
+  color: #ffffff;
+}
+.prising__list-cost {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 36px;
+  background-color: #333333;
+  width: 317px;
+  height: 88.68px;
+  border: 1px solid #f5f5f5;
+  color: #ffffff;
+}
+.prising__list-cell {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 0.5rem;
+  width: 317px;
+  height: 44.34px;
+  border: 1px solid #f5f5f5;
+  background-color: #ffffff;
+  color: #86878b;
+}
+.prising__list-cell:nth-child(3) {
+  background-color: #333333;
+}

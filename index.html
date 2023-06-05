@@ -1,95 +1,221 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/container.css" />
+    <link rel="stylesheet" href="./src/styles/section-header.css" />
+    <link rel="stylesheet" href="./src/styles/tabs.css" />
+    <link rel="stylesheet" href="./src/styles/awesome.css" />
+    <link rel="stylesheet" href="src/styles/pricing.css" />
+    <link rel="stylesheet" href="src/styles/custumers.css" />
+    <link rel="stylesheet" href="src/assets/images/background.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>axit</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./src/styles/reset.css" />
-	<link rel="stylesheet" href="./src/styles/variables.css" />
-	<link rel="stylesheet" href="./src/styles/container.css" />
-	<link rel="stylesheet" href="./src/styles/section-header.css" />
-	<link rel="stylesheet" href="./src/styles/tabs.css" />
-	<link rel="stylesheet" href="./src/styles/awesome.css" />
-	<title>axit</title>
-</head>
-
-<body class="page__content">
-	<section class="tabs">
-		<div class="container">
-			<!-- сейчас не запаривайтесь про fieldset и legend, эти теги нужны
-			 для группировки элементов форм и здесь я 
-				их использовал для того что бы скрин ридер 
-				правильно прочел этот контрол с табами. 
-				Более подробно про формы и все что с ними 
-				связано мы разберем на занятии по формам -->
-			<fieldset class="tabs__dox">
-				 <legend class="tabs__legend">Tabs</legend>
-					<input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
-					<label class="tabs__tab-label" for="tab_1"> tab 1</label>
-					<input class="tabs__tab" id="tab_2" type="radio" name="tab" />
-					<label class="tabs__tab-label" for="tab_2">
-						tab 2</label>
-	    <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
-					<label class="tabs__tab-label" for="tab_3"> tab 3</label>
-			</fieldset>
-			<div class="tabs__content" >
-				<div class="tabs__content-text">
-					<h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
-					<p class="tabs__content-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-						justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-						penatibus et magnis dis parturient montes.
-						<br />
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet.
-					</p>
-					<button class="tabs__content-button" type="button">download</button>
-				</div>
-				<img class="tabs__content-image" src="./src/assets/images/statue-of-liberty.jpg"
-					alt="statue-of-liberty image" />
-			</div>
-	</section>
-	<section class="awesome">
-		<div class="container">
-			<!-- этот блок делаем через header тк семантически он сюда подходит,
-		 по факту он является  шапкой секции -->
-			<header class="section-header">
-				<h2 class="section-header__title">whY ThIS iS AWESOME</h2>
-				<div class="section-header__line"></div>
-				<p class="section-header__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-			</header>
-			<div class="awesome__content-box">
-				<div class="awesome__card">
-					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
-					<h3 class="awesome__card-title">Thoughtful Design</h3>
-					<p class="awesome__card-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-					</p>
-				</div>
-				<div class="awesome__card">
-					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
-					<h3 class="awesome__card-title">Thoughtful Design</h3>
-					<p class="awesome__card-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-					</p>
-				</div>
-				<div class="awesome__card">
-					<img class="awesome__card-icon" src="./src/assets/icons/bulb-icon.svg" alt="bulb icon" />
-					<h3 class="awesome__card-title">Thoughtful Design</h3>
-					<p class="awesome__card-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-</body>
-
+  <body class="page__content">
+    <section class="tabs">
+      <div class="container">
+        <fieldset class="tabs__dox">
+          <legend class="tabs__legend">Tabs</legend>
+          <input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
+          <label class="tabs__tab-label" for="tab_1"> tab 1</label>
+          <input class="tabs__tab" id="tab_2" type="radio" name="tab" />
+          <label class="tabs__tab-label" for="tab_2"> tab 2</label>
+          <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
+          <label class="tabs__tab-label" for="tab_3"> tab 3</label>
+        </fieldset>
+        <div class="tabs__content">
+          <div class="tabs__content-text">
+            <h2 class="tabs__content-title">
+              Tabs with soft transitioning effect.
+            </h2>
+            <p class="tabs__content-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes.
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <button class="tabs__content-button" type="button">download</button>
+          </div>
+          <img
+            class="tabs__content-image"
+            src="./src/assets/images/statue-of-liberty.jpg"
+            alt="statue-of-liberty image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="awesome">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title">whY ThIS iS AWESOME</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="awesome__content-box">
+          <div class="awesome__card">
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__card">
+            <img
+              class="awesome__card-icon"
+              src="./src/assets/icons/bulb-icon.svg"
+              alt="bulb icon"
+            />
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__card">
+            <img
+              class="awesome__card-icon"
+              src="./src/assets/icons/bulb-icon.svg"
+              alt="bulb icon"
+            />
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title">PRICING OPTIONS</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="pricing__content-box">
+          <ul class="prising__list">
+            <li class="prising__list-title">Basic</li>
+            <li class="prising__list-cost">$10</li>
+            <li class="prising__list-cell">Free for life</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+          </ul>
+          <ul class="prising__list">
+            <li class="prising__list-title">Optima</li>
+            <li class="prising__list-cost">$20</li>
+            <li class="prising__list-cell">Free for life</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+          </ul>
+          <ul class="prising__list">
+            <li class="prising__list-title">Pro</li>
+            <li class="prising__list-cost">$30</li>
+            <li class="prising__list-cell">Free for life</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+            <li class="prising__list-cell">1 gb of space</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="custumers">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title">what our customers are saying</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="custumers__content-box">
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man1.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Rhiel Madsen</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man2.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Jaydon Rosser</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="custumers__saying">
+            <div class="custumers__saying-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </div>
+            <div class="custumers__saying-people">
+              <img class="photo" src="src/assets/icons/man3.svg" alt="" />
+              <div class="custumers__name">
+                <div class="name"><b>Cooper Dorwart</b></div>
+                <div class="job">Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <h2 class="section-footer__title">STYLISH AXURE DESIGN</h2>
+          <div class="section-footer__line"></div>
+          <p class="section-footer__description">
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </p>
+          <button class="custumers__button" type="button">download</button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

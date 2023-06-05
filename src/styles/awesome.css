@@ -1,37 +1,29 @@
-.awesome{
-    padding: 5rem 0 ;
-    }
-    
-    /* родителю прописываем 	font-size: 0 что бы убрать отступы у детей 
-    которым мы пропишем 	display: inline-block; */
-    
-    .awesome__content-box {
-        font-size: 0;
-    }
-    
-    /* для карточек прописываем 	display: inline-block 
-    тк они блочные и а мы хотим поставить их в линию */
-    
-    .awesome__card {
-        text-align: center;
-        display: inline-block;
-        width: 33.3%;
-        padding: 1rem 1.3rem;
-        line-height: 1.5;
-    }
-    
-    .awesome__card-description {
-        font-size: 1.1rem;
-        margin-bottom: 1.3rem;
-    }
-    
-    .awesome__card-icon {
-        max-width: 100px;
-    }
-    
-    .awesome__card-title {
-        margin-bottom: 1.3rem;
-        font-size: 1.5rem;
-    }
-    
-    
+.awesome {
+  padding: 5rem 0;
+}
+
+.awesome__content-box {
+  font-size: 0;
+}
+
+.awesome__card {
+  text-align: center;
+  display: inline-block;
+  width: 33.3%;
+  padding: 1rem 1.3rem;
+  line-height: 1.5;
+}
+
+.awesome__card-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.awesome__card-icon {
+  max-width: 100px;
+}
+
+.awesome__card-title {
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+}
