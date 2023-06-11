@@ -35,7 +35,7 @@
 .section-footer {
   text-align: center;
   padding: 1.5rem 0;
-  /* background-image: url(src\assets\images\background.svg); */
+  /* background-image: url(C:\Users\olegm\OneDrive\Рабочий стол\AXIT\src\assets\images\bg.jpg); */
   background-color: black;
 }
 .section-footer__title {
@@ -69,11 +69,11 @@
   width: 200px;
   position: relative;
 }
-.name {
+.saying-people__name {
   font-size: 18px;
   position: absolute;
 }
-.job {
+.saying-people__job {
   position: absolute;
   font-size: 14px;
   bottom: 0px;
