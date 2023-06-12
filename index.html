@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="src/styles/social.css" />
     <link rel="stylesheet" href="src/styles/design.css" />
     <link rel="stylesheet" href="src/styles/banner.css" />
-    <link rel="stylesheet" href="src/styles/contact_us.css">
+    <link rel="stylesheet" href="src/styles/contact_us.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -32,9 +32,9 @@
   <body class="page__content">
     <section class="start-page">
       <header class="header">
-        <image class="logo">
+        <div class="logo">
           <img src="src/assets/icons/logo.svg" alt="logo" />
-        </image>
+        </div>
         <ul class="menu">
           <li class="menu__link">
             <a href="#tabs" class="menu__link-description">Features</a>
@@ -56,9 +56,9 @@
       <section class="banner">
         <div class="banner-content">
           <div class="banner-box">
-            <image class="banner-logo">
+            <div class="banner-logo">
               <img src="src/assets/icons/logo-banner.svg" alt="" />
-            </image>
+            </div>
             <h1 class="banner__box-header">
               MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
             </h1>
@@ -352,20 +352,26 @@
         <div class="contact-box">
           <div class="contact-box__data">
             <form class="banner__login-form">
-              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="contact-name" placeholder="Name" />
             </form>
             <form class="banner__login-form">
-              <input type="text" id="email" placeholder="Email" />
+              <input type="text" id="contact-email" placeholder="Email" />
             </form>
             <form class="banner__login-form">
-              <input type="password" id="password" placeholder="Password" />
+              <input type="password" id="contact-password" placeholder="Password" />
             </form>
           </div>
-          <div class="contact-box__message">
-            
-          </div>
-          <textarea name="Message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-          <button class="tabs__content-button" type="button">Send Message</button>
+          <div class="contact-box__message"></div>
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="tabs__content-button" type="button">
+            Send Message
+          </button>
         </div>
       </div>
     </section>
