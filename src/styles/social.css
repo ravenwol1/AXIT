@@ -1,0 +1,27 @@
+.social{
+    display: flex;
+    height: 140px;
+    background-color: #F8EFEF;
+    justify-content: center;
+    gap: 50px;
+}
+.social-header{
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem 0;
+}
+.social-box{
+    max-width: 470px;
+}
+.social-description{
+font-size: 18px;
+color: #86878B;
+font-family: "Raleway", sans-serif;
+padding: 1rem 0;
+}
+.social-icons{
+margin-top: 40px;
+}
+.social-icons__img{
+    padding: 0 10px;
+}

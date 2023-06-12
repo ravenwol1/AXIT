@@ -1,6 +1,7 @@
 .section-header {
   text-align: center;
   padding: 1.5rem 0;
+  font-family: "Raleway", sans-serif;
 }
 .section-header__title {
   text-transform: uppercase;
@@ -10,6 +11,7 @@
 .section-header__description {
   font-size: 1.1rem;
   margin-top: 1.2rem;
+  color: #86878B;
 }
 .section-header__line {
   display: inline-block;

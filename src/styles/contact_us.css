@@ -1,0 +1,19 @@
+#contact{
+    padding-top: 5rem ;
+    font-family: "Raleway", sans-serif;
+}
+.contact-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+}
+#message{
+    border: none;
+    border-bottom: #BDBDBD solid 1px;
+    text-align: top;
+    margin: 1rem 3rem;
+    width: 370px;
+    height: 218px;
+    color: #BDBDBD;
+}

@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="src/styles/pricing.css" />
     <link rel="stylesheet" href="src/styles/custumers.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/social.css" />
+    <link rel="stylesheet" href="src/styles/design.css" />
+    <link rel="stylesheet" href="src/styles/banner.css" />
+    <link rel="stylesheet" href="src/styles/contact_us.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -24,7 +30,111 @@
   </head>
 
   <body class="page__content">
-    <section class="tabs">
+    <section class="start-page">
+      <header class="header">
+        <image class="logo">
+          <img src="src/assets/icons/logo.svg" alt="logo" />
+        </image>
+        <ul class="menu">
+          <li class="menu__link">
+            <a href="#tabs" class="menu__link-description">Features</a>
+          </li>
+          <li class="menu__link">
+            <a href="#awesome" class="menu__link-description">About</a>
+          </li>
+          <li class="menu__link">
+            <a href="#pricing" class="menu__link-description">Pricing</a>
+          </li>
+          <li class="menu__link">
+            <a href="#custumers" class="menu__link-description">Reviews</a>
+          </li>
+          <li class="menu__link">
+            <a href="#contact" class="menu__link-description">Contact</a>
+          </li>
+        </ul>
+      </header>
+      <section class="banner">
+        <div class="banner-content">
+          <div class="banner-box">
+            <image class="banner-logo">
+              <img src="src/assets/icons/logo-banner.svg" alt="" />
+            </image>
+            <h1 class="banner__box-header">
+              MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+            </h1>
+            <div class="banner__line"></div>
+            <p class="banner__box-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <button class="content-button" type="button">Download</button>
+          </div>
+          <div class="banner__login">
+            <h2 class="banner__login-head">
+              TRY YOUR <mark>FREE</mark> TRIAL TODAY
+            </h2>
+            <form class="banner__login-form">
+              <input type="text" id="name" placeholder="Name" />
+            </form>
+            <form class="banner__login-form">
+              <input type="text" id="email" placeholder="Email" />
+            </form>
+            <form class="banner__login-form">
+              <input type="text" id="password" placeholder="Password" />
+            </form>
+            <button class="banner__login-button" type="button">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="social">
+      <div class="social-box">
+        <h2 class="social-header">Social Media</h2>
+        <p class="social-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          euismod bibendum laoreet.
+        </p>
+      </div>
+      <div class="social-icons">
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/facebook_icon.svg"
+          alt="facebook"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/twitter_icon.svg"
+          alt="twitter"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/linkedin_icon.svg"
+          alt="linkedin"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/pinterest_icon.svg"
+          alt="pinterest"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/instagram_icon.svg"
+          alt="instagram"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/github_icon.svg"
+          alt="github"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/rss_icon.svg"
+          alt="rss"
+        />
+      </div>
+    </section>
+    <section id="tabs">
       <div class="container">
         <fieldset class="tabs__dox">
           <legend class="tabs__legend">Tabs</legend>
@@ -59,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section class="awesome">
+    <section id="awesome">
       <div class="container">
         <header class="section-header">
           <h2 class="section-header__title">whY ThIS iS AWESOME</h2>
@@ -106,7 +216,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing">
+    <section id="pricing">
       <div class="container">
         <header class="section-header">
           <h2 class="section-header__title">PRICING OPTIONS</h2>
@@ -152,7 +262,7 @@
         </div>
       </div>
     </section>
-    <section class="custumers">
+    <section id="custumers">
       <div class="container">
         <header class="section-header">
           <h2 class="section-header__title">what our customers are saying</h2>
@@ -169,7 +279,11 @@
               ex, architecto eaque quo suscipit.
             </div>
             <div class="custumers__saying-people">
-              <img class="saying-people__photo" src="src/assets/icons/man1.svg" alt="man 1" />
+              <img
+                class="saying-people__photo"
+                src="src/assets/icons/man1.svg"
+                alt="man 1"
+              />
               <div class="custumers__name">
                 <div class="saying-people__name"><b>Rhiel Madsen</b></div>
                 <div class="saying-people__job">Manager</div>
@@ -183,7 +297,11 @@
               ex, architecto eaque quo suscipit.
             </div>
             <div class="custumers__saying-people">
-              <img class="saying-people__photo" src="src/assets/icons/man2.svg" alt="man 2" />
+              <img
+                class="saying-people__photo"
+                src="src/assets/icons/man2.svg"
+                alt="man 2"
+              />
               <div class="custumers__name">
                 <div class="saying-people__name"><b>Jaydon Rosser</b></div>
                 <div class="saying-people__job">Manager</div>
@@ -197,7 +315,11 @@
               ex, architecto eaque quo suscipit.
             </div>
             <div class="custumers__saying-people">
-              <img class="saying-people__photo" src="src/assets/icons/man3.svg" alt="man 3" />
+              <img
+                class="saying-people__photo"
+                src="src/assets/icons/man3.svg"
+                alt="man 3"
+              />
               <div class="custumers__name">
                 <div class="saying-people__name"><b>Cooper Dorwart</b></div>
                 <div class="saying-people__job">Manager</div>
@@ -205,16 +327,87 @@
             </div>
           </div>
         </div>
-        <!-- <div class="section-footer">
-          <h2 class="section-footer__title">STYLISH AXURE DESIGN</h2>
-          <div class="section-footer__line"></div>
-          <p class="section-footer__description">
-            Use the sections you need, remove the ones you don't. Create
-            gorgeous prototypes faster than ever!
-          </p>
-          <button class="custumers__button" type="button">download</button>
-        </div> -->
       </div>
     </section>
+    <section class="design">
+      <header class="section-header">
+        <h2 class="design-header__title">STYLISH AXURE DESIGN</h2>
+        <div class="banner__line"></div>
+        <p class="design-header__description">
+          Use the sections you need, remove the ones you don't. Create gorgeous
+          prototypes faster than ever!
+        </p>
+        <button class="content-button" type="button">Download</button>
+      </header>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-header__title">CONTACT US</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="contact-box">
+          <div class="contact-box__data">
+            <form class="banner__login-form">
+              <input type="text" id="name" placeholder="Name" />
+            </form>
+            <form class="banner__login-form">
+              <input type="text" id="email" placeholder="Email" />
+            </form>
+            <form class="banner__login-form">
+              <input type="password" id="password" placeholder="Password" />
+            </form>
+          </div>
+          <div class="contact-box__message">
+            
+          </div>
+          <textarea name="Message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+          <button class="tabs__content-button" type="button">Send Message</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-icons">
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/facebook_icon.svg"
+          alt="facebook"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/twitter_icon.svg"
+          alt="twitter"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/linkedin_icon.svg"
+          alt="linkedin"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/pinterest_icon.svg"
+          alt="pinterest"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/instagram_icon.svg"
+          alt="instagram"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/github_icon.svg"
+          alt="github"
+        />
+        <img
+          class="social-icons__img"
+          src="src/assets/icons/rss_icon.svg"
+          alt="rss"
+        />
+      </div>
+      <p class="footer-date">© 2015 Axure Themes</p>
+    </footer>
   </body>
 </html>

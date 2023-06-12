@@ -1,0 +1,20 @@
+.design{
+    background-color: black;
+    background-image: url(/src/assets/images/design-bg.png);
+    background-size: 100%;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.design-header__title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+}
+.design-header__description{
+    padding-top: 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}

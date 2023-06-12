@@ -1,8 +1,9 @@
-.custumers {
+#custumers {
   padding: 5rem 0;
   font-family: "Raleway", sans-serif;
 }
 .custumers__content-box {
+  margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -55,7 +56,7 @@
   font-size: 14px;
   margin-top: 1.2rem;
 }
-.custumers__button {
+.content__button {
   text-transform: capitalize;
   font-size: 1.1rem;
   padding: 1rem 6.5rem;
